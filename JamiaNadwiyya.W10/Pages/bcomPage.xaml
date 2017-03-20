@@ -1,0 +1,52 @@
+﻿<Page
+    x:Class="JamiaNadwiyya.Pages.bcomPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:JamiaNadwiyya.Pages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <ScrollViewer HorizontalScrollMode="Enabled">
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <StackPanel>
+                <Button Name="cloudpagebutton" Margin="20" Height="30" Width="30" Content="goto" Click="cloudpagebutton_Click"></Button>
+                <TextBlock Text="BCOM COMPUTER APPLICATION" FontSize="30" FontWeight="Black" TextWrapping="Wrap" FontFamily="Bell MT" Margin="20"></TextBlock>
+
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Core" FontSize="25" Margin="10" FontWeight="Bold" ></TextBlock>
+                <TextBlock Text="Managerial Concept And Buisiness Ethics" FontSize="25" Margin="40,10,10,0" TextWrapping="Wrap"></TextBlock>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Complementary" FontSize="25" Margin="10" FontWeight="Bold" ></TextBlock>
+                <TextBlock Text="Managerial Economics" FontSize="25" Margin="40,10,10,0" TextWrapping="Wrap"></TextBlock>
+            </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Common" FontSize="25" Margin="10" FontWeight="Bold" ></TextBlock>
+                    <StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="English" FontSize="25"  TextWrapping="Wrap" Margin="30,10,10,0"></TextBlock>
+                            <StackPanel Margin="80,10,10,0">
+                                <TextBlock Text="1 The Four Skills for Communication" FontSize="25"  TextWrapping="Wrap" ></TextBlock>
+                        <TextBlock Text="2 Modern Prose and Drama" FontSize="25"  TextWrapping="Wrap" ></TextBlock>
+                            </StackPanel>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Malayalam" FontSize="25"  TextWrapping="Wrap" Margin="30,10,10,0"></TextBlock>
+                            <TextBlock Text="Malayala Sahitya Padanam - " FontSize="25"  TextWrapping="Wrap" Margin="40,10,10,0"></TextBlock>
+                             </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Hindi" FontSize="25"  TextWrapping="Wrap" Margin="30,10,10,0"></TextBlock>
+                            <TextBlock Text="Communication Skills in Hindi " FontSize="25"  TextWrapping="Wrap" Margin="100,10,10,0"></TextBlock>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Arabic" FontSize="25"  TextWrapping="Wrap" Margin="30,10,10,0"></TextBlock>
+                            <TextBlock Text="Communication Skills in Arabic " FontSize="25"  TextWrapping="Wrap" Margin="90,10,10,0"></TextBlock>
+                        </StackPanel>
+                    </StackPanel>
+                    
+                </StackPanel>
+                <HyperlinkButton Content="Click here for syllabus" Margin="20" FontWeight="SemiBold" NavigateUri="http://www.universityofcalicut.info/syl/OrderBComComputerApplication.pdf" ></HyperlinkButton>
+                </StackPanel>
+    </Grid>
+    </ScrollViewer>
+</Page>

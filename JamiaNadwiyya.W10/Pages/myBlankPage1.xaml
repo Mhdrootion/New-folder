@@ -1,0 +1,23 @@
+﻿<Page
+    x:Class="JamiaNadwiyya.Pages.myBlankPage1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:JamiaNadwiyya.Pages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <StackPanel>
+
+            <FlipView  Height="400" Width="400" Name="flipView1" Margin="20" VerticalAlignment="Center" HorizontalAlignment="Center">
+                <Image Stretch="UniformToFill" Source="C:\Users\ROSHAN\Desktop\New folder\JamiaNadwiyya.W10\Assets\07_Beckham-Belstaff.jpg" />
+                <Image Source="C:\Users\ROSHAN\Desktop\New folder\JamiaNadwiyya.W10\Assets\90ConsonanceAndDisonance.jpg" Stretch="UniformToFill"  />
+                <Button Content="hello" HorizontalAlignment="Center"/>
+                <Image Stretch="UniformToFill" Source="C:\Users\ROSHAN\Desktop\New folder\JamiaNadwiyya.W10\Assets\9eee20936401a4fac408911c3c964dc9.jpg" />
+            </FlipView>
+
+
+        </StackPanel>
+    </Grid>
+</Page>
