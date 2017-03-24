@@ -16,6 +16,7 @@ using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Navigation;
 using Microsoft.WindowsAzure.MobileServices;
 
+
 using JamiaNadwiyya.Pages;
 
 namespace JamiaNadwiyya
@@ -25,6 +26,11 @@ namespace JamiaNadwiyya
     /// </summary>
     sealed partial class App : Application
     {
+        public class messagesTable
+        {
+            public string MyMessageCol { get; set; }
+            public string id { get; set; }
+        }
         /// <summary>
         /// Initializes the singleton application object.  This is the first line of authored code
         /// executed, and as such is the logical equivalent of main() or WinMain().
@@ -34,9 +40,14 @@ namespace JamiaNadwiyya
             this.InitializeComponent();
             this.Suspending += OnSuspending;
         }
-        public static MobileServiceClient MobileService = new MobileServiceClient(
-            "https://sampleapptopic.azurewebsites.net"
-);
+        public static MobileServiceClient MobileService = new MobileServiceClient("http://jamiaapp.azurewebsites.net");
+
+
+
+
+
+
+
         /// <summary>
         /// Invoked when the application is launched normally by the end user.  Other entry points
         /// will be used such as when the application is launched to open a specific file.

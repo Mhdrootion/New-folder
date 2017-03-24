@@ -122,11 +122,7 @@ namespace JamiaNadwiyya.Pages
 
             NavigationItems.Add(NavigationItem.Separator);
 
-            NavigationItems.Add(AppNavigation.NodeFromControl(
-				"About",
-                "NavigationPaneAbout".StringResource(),
-                new AboutPage(),
-                AppNavigation.IconFromImage(new Uri("ms-appx:///Assets/about.png"))));
+            
             
         }        
         #endregion        

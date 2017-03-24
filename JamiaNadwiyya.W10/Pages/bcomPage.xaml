@@ -9,7 +9,6 @@
     <ScrollViewer HorizontalScrollMode="Enabled">
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <StackPanel>
-                <Button Name="cloudpagebutton" Margin="20" Height="30" Width="30" Content="goto" Click="cloudpagebutton_Click"></Button>
                 <TextBlock Text="BCOM COMPUTER APPLICATION" FontSize="30" FontWeight="Black" TextWrapping="Wrap" FontFamily="Bell MT" Margin="20"></TextBlock>
 
             <StackPanel Orientation="Horizontal">

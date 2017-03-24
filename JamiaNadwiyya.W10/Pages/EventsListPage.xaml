@@ -24,24 +24,42 @@
             IsVisible="{Binding HasActions}"
             Foreground="{StaticResource AppBarForeground}"            
             Background="{StaticResource AppBarBackground}">
-		</was_actions:ActionsCommandBar>
+        </was_actions:ActionsCommandBar>
     </was_controls:ShellControl.CommandBar>
 
     <Grid Background="{StaticResource AppBackground}">
 
-        
+
         <Grid.RowDefinitions>
-			<RowDefinition Height="Auto"/>
-			<RowDefinition Height="*"/>
-			<RowDefinition Height="Auto"/>
-			<RowDefinition Height="Auto"/>
-		</Grid.RowDefinitions>
-		<was_controls:ErrorNotificationControl                
-			x:Uid="ListErrorNotificationControl"                
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <RelativePanel>
+            
+            <Button Name="gotom"   Margin="10 20 0 0" Click="gotom_Click">
+                <SymbolIcon Symbol="Directions"></SymbolIcon></Button>
+            <Button Name="refresh"  RelativePanel.RightOf="gotom" Margin="10 20 0 0" Click="refresh_Click">
+                <SymbolIcon Symbol="Refresh"></SymbolIcon>
+            </Button>
+            <TextBlock Name="error" Foreground="Red" FontSize="20" Height="auto" Width="auto" RelativePanel.Below="gotom"></TextBlock>
+            <ListView Name="ListItems" Margin="62,10,0,0"  RelativePanel.RightOf="refresh" Height="30" Width="300">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+            </ListView>
+        </RelativePanel>
+
+        <was_controls:ErrorNotificationControl
+            x:Uid="ListErrorNotificationControl"                
 			ErrorColor="{StaticResource DescriptionForeground}"
 			ErrorVisibility="{x:Bind ViewModel.HasLoadDataErrors, Converter={StaticResource BoolToVisibilityConverter}, Mode=OneWay}"
 			Margin="10,0,18,0"/>
-		<list_layouts:ListContactCard
+        <list_layouts:ListContactCard
             Grid.Row="1"
             OneRowModeEnabled="False"
             ItemsSource="{x:Bind ViewModel.Items}"
@@ -66,14 +84,17 @@
             IsIndeterminate="True"
             Foreground="{StaticResource DescriptionForeground}"
             Visibility="{x:Bind ViewModel.IsLoadingNextPage, Converter={StaticResource BoolToVisibilityConverter}, FallbackValue=Collapsed, Mode=OneWay}"/>
+                          
         <controls:DataUpdateInformationControl
 			Grid.Row="3"
-			Margin="8,4,8,4"
+			Margin="8,0,0,4"
 			HorizontalAlignment="Left"
 			Color="{StaticResource DescriptionForeground}"
 			HasLocalData="{x:Bind ViewModel.HasLocalData}"
-			LastUpdateDateTime="{x:Bind ViewModel.LastUpdated, Mode=OneWay}"/>
-        
-        
+			LastUpdateDateTime="{x:Bind ViewModel.LastUpdated, Mode=OneWay}" Height="16" VerticalAlignment="Bottom"/>
+
+
+
     </Grid>
+    
 </Page>

@@ -218,10 +218,6 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Pages\AboutPage.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
     <Page Include="Pages\EventsDetailPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -268,7 +264,6 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="cloudData.cs" />
     <Compile Include="Layouts\List\ListBigHorizontalCardBox.xaml.cs">
       <DependentUpon>ListBigHorizontalCardBox.xaml</DependentUpon>
     </Compile>
@@ -341,6 +336,7 @@
     <Compile Include="Layouts\Controls\HeroImage.xaml.cs">
       <DependentUpon>HeroImage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="messagesTable.cs" />
     <Compile Include="Pages\bcomPage.xaml.cs">
       <DependentUpon>bcomPage.xaml</DependentUpon>
     </Compile>
@@ -352,9 +348,6 @@
     </Compile>
     <Compile Include="Pages\EventsListPage.xaml.cs">
       <DependentUpon>EventsListPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Pages\AboutPage.xaml.cs">
-      <DependentUpon>AboutPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\EventsDetailPage.xaml.cs">
       <DependentUpon>EventsDetailPage.xaml</DependentUpon>
@@ -456,6 +449,9 @@
   </ItemGroup>
   <ItemGroup>
     <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
+    <SDKReference Include="SQLite.UWP.2015, Version=3.16.2">
+      <Name>SQLite for Universal Windows Platform</Name>
+    </SDKReference>
     <SDKReference Include="WindowsMobile, Version=10.0.10586.0">
       <Name>Windows Mobile Extensions for the UWP</Name>
     </SDKReference>
