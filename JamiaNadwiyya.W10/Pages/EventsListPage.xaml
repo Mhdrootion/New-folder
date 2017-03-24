@@ -45,13 +45,7 @@
                 <SymbolIcon Symbol="Refresh"></SymbolIcon>
             </Button>
             <TextBlock Name="error" Foreground="Red" FontSize="20" Height="auto" Width="auto" RelativePanel.Below="gotom"></TextBlock>
-            <ListView Name="ListItems" Margin="62,10,0,0"  RelativePanel.RightOf="refresh" Height="30" Width="300">
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        
-                        </DataTemplate>
-                    </ListView.ItemTemplate>
-            </ListView>
+            <ListView Name="ListItems" Margin="30,20,0,0"  RelativePanel.RightOf="refresh" Height="auto" Width="auto"></ListView>
         </RelativePanel>
 
         <was_controls:ErrorNotificationControl

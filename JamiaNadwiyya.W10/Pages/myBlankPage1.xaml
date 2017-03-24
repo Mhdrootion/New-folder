@@ -9,16 +9,11 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <StackPanel>
-            <FlipView x:Name="MyFilpView" HorizontalAlignment="Left" Margin="30" VerticalAlignment="Top" Width="556" Height="372" >
-                <FlipView.ItemTemplate>
-                    <DataTemplate>
-             
-                <Image Stretch="UniformToFill" Source="C:\Users\ROSHAN\Desktop\New folder\JamiaNadwiyya.W10\Assets\07_Beckham-Belstaff.jpg" />
-                        
-                    </DataTemplate>
-                </FlipView.ItemTemplate>
+            <FlipView Margin="20" Height="300"  >
+                <Image Stretch="Uniform"  Source="\Assets\90ConsonanceAndDisonance.jpg"/>
+                <Image Stretch="Uniform"  Source="\Assets\07_Beckham-Belstaff.jpg"/>
+                
             </FlipView>
-
         </StackPanel>
     </Grid>
 </Page>

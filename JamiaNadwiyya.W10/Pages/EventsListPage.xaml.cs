@@ -57,11 +57,13 @@ namespace JamiaNadwiyya.Pages
             this.Frame.Navigate(typeof(cloudPage));
         }
 
-        private void refresh_Click(object sender, RoutedEventArgs e)
+        public  void refresh_Click(object sender, RoutedEventArgs e)
         {
             messagesTable obj = new messagesTable();
             ListItems.ItemsSource = obj.MyMessageCol;
-
-        }
+            ListItems.Items.Add (messgesTableObj.ReadAsync(obj.MyMessageCol));
+               
+            
+          }
     }
 }

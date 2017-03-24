@@ -405,7 +405,7 @@
     <EmbeddedResource Include="Assets\07_Beckham-Belstaff.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
-    <EmbeddedResource Include="Assets\90ConsonanceAndDisonance.jpg" />
+    <Content Include="Assets\90ConsonanceAndDisonance.jpg" />
     <EmbeddedResource Include="Assets\9eee20936401a4fac408911c3c964dc9.jpg" />
     <Content Include="Layouts\Detail\MulticolumnLayout.json" />
     <Content Include="Layouts\Detail\TextDetailLayout.json" />
